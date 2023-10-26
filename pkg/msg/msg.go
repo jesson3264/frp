@@ -65,15 +65,15 @@ var TypeNameNatHoleResp = reflect.TypeOf(&NatHoleResp{}).Elem().Name()
 
 // When frpc start, client send this message to login to server.
 type Login struct {
-	Version      string            `json:"version,omitempty"`
-	Hostname     string            `json:"hostname,omitempty"`
-	Os           string            `json:"os,omitempty"`
-	Arch         string            `json:"arch,omitempty"`
-	User         string            `json:"user,omitempty"`
-	PrivilegeKey string            `json:"privilege_key,omitempty"`
-	Timestamp    int64             `json:"timestamp,omitempty"`
-	RunID        string            `json:"run_id,omitempty"`
-	Metas        map[string]string `json:"metas,omitempty"`
+	Version      string            `json:"v,omitempty"`
+	Hostname     string            `json:"ht,omitempty"`
+	Os           string            `json:"s,omitempty"`
+	Arch         string            `json:"a,omitempty"`
+	User         string            `json:"u,omitempty"`
+	PrivilegeKey string            `json:"pr,omitempty"`
+	Timestamp    int64             `json:"pkey,omitempty"`
+	RunID        string            `json:"ri,omitempty"`
+	Metas        map[string]string `json:"m,omitempty"`
 
 	// Some global configures.
 	PoolCount int `json:"pool_count,omitempty"`
@@ -137,12 +137,12 @@ type NewWorkConn struct {
 type ReqWorkConn struct{}
 
 type StartWorkConn struct {
-	ProxyName string `json:"proxy_name,omitempty"`
-	SrcAddr   string `json:"src_addr,omitempty"`
-	DstAddr   string `json:"dst_addr,omitempty"`
-	SrcPort   uint16 `json:"src_port,omitempty"`
-	DstPort   uint16 `json:"dst_port,omitempty"`
-	Error     string `json:"error,omitempty"`
+	ProxyName string `json:"pmpty,omitempty"`
+	SrcAddr   string `json:"srty,omitempty"`
+	DstAddr   string `json:"dsty,omitempty"`
+	SrcPort   uint16 `json:"sp,omitempty"`
+	DstPort   uint16 `json:"dp,omitempty"`
+	Error     string `json:"e,omitempty"`
 }
 
 type NewVisitorConn struct {

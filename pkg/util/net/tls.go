@@ -23,7 +23,8 @@ import (
 	libnet "github.com/fatedier/golib/net"
 )
 
-var FRPTLSHeadByte = 0x17
+// var FRPTLSHeadByte = 0x17
+var FRPTLSHeadByte = 0x10 // 首字节
 
 func CheckAndEnableTLSServerConnWithTimeout(
 	c net.Conn, tlsConfig *tls.Config, tlsOnly bool, timeout time.Duration,
